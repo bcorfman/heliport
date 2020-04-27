@@ -10,13 +10,14 @@ class TestHeliport(unittest.TestCase):
             if i > 0:
                 results += ''
             results += f'Case Number {i} radius is: {item:.2f}'
-        self.assertEqual(h.print_output(), results)
+        self.assertEqual(h.get_output(), results)
 
     # def test_read_case(self):
     #     h = Heliport('heliport.in')
     #     h.read_case()
     #     self.assertEqual()
     #
+
 
 if __name__ == '__main__':
     unittest.main()

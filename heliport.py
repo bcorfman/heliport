@@ -3,7 +3,7 @@ import math
 
 class Heliport:
     def __init__(self, input_filename):
-        self.cases = [[1, 1.0], [2, 10.0]]
+        self.cases = [1.0, 10.0]
 
     # def read_case(self, file_handle):
     #     number_of_sides = int(file_handle.readline())
@@ -16,8 +16,10 @@ class Heliport:
     # def get_helipad_radii(self):
     #     return [1.0, 10.0]
 
-    def print_output(self):
+    def get_output(self):
+        results = ''
         for i, radius in enumerate(self.cases):
             if i > 0:
-                print('')
-            print(f'Case Number {i} radius is: {radius: .2f}')
+                results += ''
+            results += f'Case Number {i} radius is: {radius:.2f}'
+        return results
