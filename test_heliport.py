@@ -13,11 +13,11 @@ class TestHeliport:
         assert self.heliport.get_output() == results"""
 
     def test_read_file(self):
-        lines = ['4',
-                 '2 R 2 U 2 L 2 D',
-                 '10',
+        lines = ['0',
                  '10 R 10 U 10 L 10 U 10 R 5 U 30 L 20 D 20 R 5 D',
-                 '0']
+                 '10',
+                 '2 R 2 U 2 L 2 D',
+                 '4']
         assert read_file('heliport.in') == lines
 
     def test_roof_outline(self):
